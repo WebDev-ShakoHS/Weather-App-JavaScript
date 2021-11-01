@@ -17,13 +17,13 @@ weather.temperature = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273;
-// API KEY
+// API KEY PUT YOUR API KEY HERE!!!!!!!!!
 const key = "YOUR KEY HERE";
-var latitude = 44.7974;
-var longitude = -93.5273;
+var latitude = "44.7974";
+var longitude = "-93.5273";
 
 // GET WEATHER FROM API PROVIDER
-function getWeather(latitude, longitude){
+function getWeather(){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     
     fetch(api)
